@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.homebrewersassistant.MainActivity"
+    android:touchscreenBlocksFocus="false">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ABV"
+        android:id="@+id/ABV_Title"
+        android:textStyle="bold"
+        android:textColor="#3F51B5"
+        android:textSize="@dimen/abc_text_size_title_material"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu"
+        android:id="@+id/back_abv"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/Ferm_Title"
+        android:layout_alignEnd="@+id/Ferm_Title"
+        android:onClick="MenuView" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/OG"
+        android:hint="@string/OG"
+        android:layout_above="@+id/FG"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="56dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/FG"
+        android:hint="@string/FG"
+        android:layout_alignLeft="@+id/OG"
+        android:layout_alignStart="@+id/OG"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ABVFormula"
+        android:id="@+id/ABV_Result"
+        android:layout_marginTop="58dp"
+        android:layout_below="@+id/FG"
+        android:layout_toStartOf="@+id/Ferm_Title"
+        android:layout_alignRight="@+id/ABV_Title"
+        android:layout_alignEnd="@+id/ABV_Title" />
+
+</RelativeLayout>

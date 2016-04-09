@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Home Brewer\'s Assistant</string>
+
+    <string name="sanitizing">Sanitizing</string>
+    <string name="brewing">Brewing</string>
+    <string name="fermentation">Fermentation</string>
+    <string name="bottling">Bottling</string>
+    <string name="drinking">Drinking</string>
+    <string name="ABV">ABV Formula</string>
+
+    <string name="next">Next</string>
+    <string name="menu">Menu</string>
+
+    <string name="SanitizingText">"This must be done to brewing equipment, fermentation equipment, and bottling equipment. Any rouge bacteria or yeast and you'll have yucky beer.
+Everything must be cleaned first in hot water and with brew soap or at least unscented,food-safe soap. After this step you have to sanitize with a special
+product to kill off any yeast/bacteria that can be naturally occurring."</string>
+    <string name="SaniWarningText">"Don't touch anything with un-sanitized hands or otherwise you'll have to do it again."</string>
+
+    <string name="BrewText">
+"This is where your ingredients start to become beer. All extract kits ( the easiest place to start) have specific instructions but the basic idea is:
+brew the grains/malt/hops to prepare them to produce the proper sugars/bittering agents that later give the beer it's flavor. This can be an hour or more of
+stirring and babysitting a pot on a stove. After cooling and taking the OG, the liquid gets moved to the Carboy/Bucket for fermentation."</string>
+    <string name="BrewTextDetail">Original Gravity (OG)-measurement of sugars that can be turned into alcohol later.</string>
+
+    <string name="FermentationText">"This is when your beer gets awesome. The yeast that your beer uses will determine how much sugar it will convert to alcohol. This part can vary depending on
+the kind of beer you're making. Some beers have only one fermentation period, while others go through a second fermentation.
+This part can be cool to watch if you're doing it in a Glass Carboy and your Airlock will end up bubbling and you'll see a lot of changes in your beer."</string>
+    <string name="FermentationTextDetail">Racking-The process of moving the beer to another carboy to clear out any impurities before Second Fermentation.</string>
+
+    <string name="BottlingText">"Using a siphon, you move the beer into your bottles. Don't forget though, these bottles need to be cleaned/sanitized FIRST. At this point, the beer needs time to carbonate/condition. (Flat Beer is Icky). The easiest way
+is to use something called carbonation drops. It;s sugar to give the remaining yeast to help produce carbonation but not necessarily enough to produce more
+alcohol. You get to cap the beer and then patiently wait. Most basic beers will be about two weeks before you can pop it open. Stouts and more complex beers
+can take months, but don't worry your patience will be rewarded." </string>
+    <string name="BottlingTextDetail">Measure the Final Gravity (FV) so that you can determine approximately how much alcohol your beer contains. </string>
+
+
+    <string name="DrinkingText">"After it's sat all this time, it might be tempting to just pop it up and guzzle it down. DON'T DO IT!  Observing your beer and noting details about taste will help you brew better beer each time. Color, Taste, Smell, Carbonation, and many more details are important characteristics that tells you a lot about the brewing process." </string>
+    <string name="DrinkingTextDetail">You have made your very own brew, Congratulations! Now drink it with pride!</string>
+
+    <string name="ABVFormula">ABV = OG - FV / FV * 100</string>
+    <string name="FG">Final Gravity</string>
+    <string name="OG">Original Gravity</string>
+
+
+
+
+
+
+
+
+</resources>
