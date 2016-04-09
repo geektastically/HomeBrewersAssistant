@@ -1,5 +1,6 @@
 package com.example.android.homebrewersassistant;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -10,48 +11,46 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
     }
 
-    /** Called when the user clicks the Menu button */
-    public void ViewMenu(View view) {
-        // Do something in response to button
-        setContentView(R.layout.activity_main);
+    public void StartSanitizingActivity(View view) {
+
+        Intent SanitizingActivityIntent = new Intent(this, Sanitizing_Activity.class);
+        startActivity(SanitizingActivityIntent);
     }
 
-    /** Called when the user clicks the Sanitizing button */
-    public void ViewSani(View view) {
-        // Do something in response to button
-        setContentView(R.layout.sanitizing);
+    public void StartBrewingActivity(View view) {
+
+        Intent BrewingActivityIntent = new Intent(this, BrewingActivity.class);
+        startActivity(BrewingActivityIntent);
     }
 
-    /** Called to Navigate to Brewing */
-    public void ViewBrewing(View view) {
-        // Do something in response to button
-        setContentView(R.layout.brewing);
+
+    public void StartFermentationActivity(View view) {
+
+        Intent FermentationActivityIntent = new Intent(this, FermentationActivity.class);
+        startActivity(FermentationActivityIntent);
     }
 
-    /** Called when the user clicks the Fermentation button */
-    public void ViewFerm(View view) {
-        // Do something in response to button
-        setContentView(R.layout.fermentation);
+
+    public void StartBottlingActivity(View view) {
+
+        Intent BottlingActivityIntent = new Intent(this, BottlingActivity.class);
+        startActivity(BottlingActivityIntent);
     }
 
-    /** Called when the user clicks the Bottling button */
-    public void ViewBottle(View view) {
-        // Do something in response to button
-        setContentView(R.layout.bottling);
+
+    public void StartDrinkingActivity(View view) {
+
+        Intent DrinkingActivityIntent = new Intent(this, DrinkingActivity.class);
+        startActivity(DrinkingActivityIntent);
     }
 
-    /** Called when the user clicks the Drinking button */
-    public void ViewDrink(View view) {
-        // Do something in response to button
-        setContentView(R.layout.drinking);
-    }
+    public void StartabvActivity(View view) {
 
-    /** Called when the user clicks the ABV Formula button */
-    public void ViewAbv(View view) {
-        // Do something in response to button
-        setContentView(R.layout.abv);
+        Intent abvActivityIntent = new Intent(this, Sanitizing_Activity.class);
+        startActivity(abvActivityIntent);
     }
 
 }

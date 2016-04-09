@@ -3,94 +3,75 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.android.homebrewersassistant.MainActivity"
-    android:background="@drawable/assistant">
+    tools:context="com.example.android.homebrewersassistant.MainActivity">
 
     <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/linearLayout"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true">
-
-        <Button
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:text="@string/sanitizing"
-            android:id="@+id/menu_sani"
-            android:layout_above="@+id/menu_ferm"
-            android:layout_toRightOf="@+id/menu_bottle"
-            android:layout_toEndOf="@+id/menu_bottle"
-            android:onClick="ViewSani" />
-
-        <Button
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:text="@string/brewing"
-            android:id="@+id/menu_brewing"
-            android:layout_alignTop="@+id/menu_sani"
-            android:layout_toLeftOf="@+id/menu_drinking"
-            android:layout_toStartOf="@+id/menu_drinking"
-            android:onClick="ViewBrewing" />
-
-        <Button
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/menu_ferm"
-            android:text="@string/fermentation"
-            android:layout_above="@+id/menu_abv"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:onClick="ViewFerm" />
-
-        <Button
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:text="@string/bottling"
-            android:id="@+id/menu_bottle"
-            android:layout_above="@+id/menu_abv"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginBottom="56dp"
-            android:onClick="ViewBottle" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/linearLayout"
-        android:layout_alignStart="@+id/linearLayout">
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
 
         <Button
-            android:layout_width="200dp"
+            android:id="@+id/menu_sani"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/drinking"
+            android:layout_above="@+id/menu_ferm"
+            android:onClick="StartSanitizingActivity"
+            android:text="@string/sanitizing" />
+
+        <Button
+            android:id="@+id/menu_brewing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/menu_ferm"
+            android:onClick="StartBrewingActivity"
+            android:text="@string/brewing" />
+
+        <Button
+            android:id="@+id/menu_ferm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/menu_bottle"
+            android:onClick="StartFermentationActivity"
+            android:text="@string/fermentation" />
+
+        <Button
+            android:id="@+id/menu_bottle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/menu_drinking"
+            android:layout_marginBottom="56dp"
+            android:onClick="StartBottlingActivity"
+            android:text="@string/bottling" />
+
+        <Button
             android:id="@+id/menu_drinking"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:onClick="ViewDrink" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/menu_abv"
+            android:onClick="StartDrinkingActivity"
+            android:text="@string/drinking" />
 
         <Button
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
             android:id="@+id/menu_abv"
-            android:layout_alignParentBottom="true"
-            android:layout_toRightOf="@+id/menu_bottle"
-            android:layout_toEndOf="@+id/menu_bottle"
-            android:text="@string/ABV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/menu_drinking"
             android:layout_gravity="bottom|center_horizontal"
-            android:onClick="ViewAbv"
-            android:nestedScrollingEnabled="false" />
+            android:onClick="StartabvActivity"
+            android:text="@string/ABV" />
+
     </LinearLayout>
+
 
 </RelativeLayout>

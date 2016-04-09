@@ -7,67 +7,67 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    >
+    tools:context="com.example.android.homebrewersassistant.Sanitizing_Activity">
 
     <ImageView
+        android:id="@+id/Sanitizing_Image_View"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:id="@+id/Sanitizing_Image_View"
-        android:src="@drawable/washyourhands"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/washyourhands" />
 
     <TextView
+        android:id="@+id/Sanitizing_Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/Sanitizing_Image_View"
+        android:layout_centerHorizontal="true"
         android:text="@string/sanitizing"
-        android:id="@+id/Sanitizing_Title"
-        android:textStyle="bold"
         android:textColor="#3F51B5"
         android:textSize="@dimen/abc_text_size_title_material"
-        android:layout_below="@+id/Sanitizing_Image_View"
-        android:layout_centerHorizontal="true" />
+        android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/Sanitizing_Detail_Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/SaniWarningText"
-        android:id="@+id/Sanitizing_Detail_Text"
-        android:textStyle="bold"
-        android:textColor="#3F51B5"
         android:layout_above="@+id/next_sani"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="44dp" />
+        android:layout_marginBottom="44dp"
+        android:text="@string/SaniWarningText"
+        android:textColor="#3F51B5"
+        android:textStyle="bold" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/SanitizingText"
         android:id="@+id/Sanitizing_Text"
-        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_above="@+id/Sanitizing_Detail_Text"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:text="@string/SanitizingText"
+        android:textColor="#000000" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/next"
         android:id="@+id/next_sani"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:onClick="ViewBrewing" />
-
-    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/menu"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:onClick="StartBrewingActivity"
+        android:text="@string/next" />
+
+    <Button
         android:id="@+id/back_sani"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:onClick="ViewMenu"
-        android:nestedScrollingEnabled="true" />
+        android:nestedScrollingEnabled="true"
+        android:onClick="StartMainActivity"
+        android:text="@string/menu" />
 
 </RelativeLayout>

@@ -15,6 +15,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Sanitizing_Activity" />
+        <activity android:name=".BrewingActivity" />
+        <activity android:name=".FermentationActivity" />
+        <activity android:name=".BottlingActivity" />
+        <activity android:name=".DrinkingActivity" />
+        <activity android:name=".abvActivity"></activity>
     </application>
 
 </manifest>

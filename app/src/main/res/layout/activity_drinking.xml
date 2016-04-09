@@ -7,59 +7,58 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.android.homebrewersassistant.MainActivity"
-    >
+    tools:context="com.example.android.homebrewersassistant.Drinking">
 
     <ImageView
+        android:id="@+id/Drinking_Image_View"
         android:layout_width="wrap_content"
         android:layout_height="130dp"
-        android:id="@+id/Drinking_Image_View"
-        android:src="@drawable/drinking"
-        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentTop="true"
+        android:src="@drawable/drinking" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/DrinkingText"
         android:id="@+id/Drinking_Text"
-        android:textColor="#000000"
-        android:layout_centerVertical="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/DrinkingTextDetail"
-        android:id="@+id/Drinking_Detail_Text"
-        android:textStyle="bold"
-        android:textColor="#3F51B5"
-        android:layout_below="@+id/Drinking_Text"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="46dp" />
+        android:layout_centerVertical="true"
+        android:text="@string/DrinkingText"
+        android:textColor="#000000" />
 
     <TextView
+        android:id="@+id/Drinking_Detail_Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/drinking"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Drinking_Text"
+        android:layout_marginTop="46dp"
+        android:text="@string/DrinkingTextDetail"
+        android:textColor="#3F51B5"
+        android:textStyle="bold" />
+
+    <TextView
         android:id="@+id/Drinking_Title"
-        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Drinking_Image_View"
+        android:layout_centerHorizontal="true"
+        android:text="@string/drinking"
         android:textColor="#3F51B5"
         android:textSize="@dimen/abc_text_size_title_material"
-        android:layout_below="@+id/Drinking_Image_View"
-        android:layout_centerHorizontal="true" />
+        android:textStyle="bold" />
 
     <Button
+        android:id="@+id/back_drinking"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/menu"
-        android:id="@+id/back_drinking"
-        android:onClick="ViewMenu"
+        android:layout_alignEnd="@+id/Drinking_Title"
         android:layout_alignParentBottom="true"
         android:layout_alignRight="@+id/Drinking_Title"
-        android:layout_alignEnd="@+id/Drinking_Title" />
+        android:onClick="StartMainActivity"
+        android:text="@string/menu" />
 
 </RelativeLayout>
